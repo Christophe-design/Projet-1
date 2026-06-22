@@ -1,0 +1,230 @@
+/* --- CONFIGURATION GLOBALE ET TYPOGRAPHIE --- */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 15px;
+    color: #334155; /* Gris ardoise moderne */
+    background-color: white;
+    line-height: 1.6;
+    margin: 20px;
+    
+}
+
+h1, h2, h3 {
+    color: #0f172a;
+    text-align: center;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -0.025em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #1e40af, #3b82f6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+ 
+}
+
+h2, h3 { 
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-indent: 0; /* Plus propre une fois centré */
+    margin-top: 30px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+
+} 
+.gauche {
+    width: 35%;
+    background: #f0f0f0;
+    padding: 30px 25px;
+}
+.droite {
+    position: relative;
+    width: 65%;
+    padding: 40px 35px;
+}
+.droite h2 {
+    font-size: 18px;
+    color: #161b88;
+    align-items: center;
+    display: flex;
+    padding-bottom: 8px;
+    border-bottom: #161b88;
+    gap: 8px;
+    margin: 35px 0 15px;
+}
+
+.cv {
+    display: flex;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 0 20px #0002;
+
+}
+p {
+    margin-bottom: 15px;
+}
+
+
+em { 
+    background-color: #fef08a; /* Jaune pastel plus doux pour les yeux */
+    padding: 2px 6px;
+    border-radius: 4px;
+} 
+
+/* --- IMAGES ET EN-TÊTE --- */
+img {
+    width: 100px;
+    height: auto;
+    display: block;
+    border-radius: 50px;
+    transition: transform 0.2s ease;
+}
+.bordure{
+    border: 4px solid rgb(15, 0, 0);
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+
+header {
+    background: #ffffff;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+    text-align: center;
+    grid-template-columns: 100px 1fr 100px;
+    display: grid;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+header a {
+    color: #051c4e;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- LE TABLEAU (GRANDES AMÉLIORATIONS) --- */
+.table-container {
+    overflow-x: auto;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05);
+    border-radius: 12px;
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    text-align: center;
+    overflow:visible;
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+caption {
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #0c0752;
+    letter-spacing: 0.1em;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+td, th {
+    padding: 14px ;
+    border: 1px solid #0e2c50; /* Bordures fines et discrètes */
+    font-weight: 600;
+}
+
+/* Styles spécifiques à vos classes de cellules */
+.e {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: #ffffff !important;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    font-weight: 700;
+}
+.eneam span {
+    transform: rotate(-25deg);
+    display: inline-block;
+    transform-origin: center;
+
+}
+.eneam {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    border-right: 2px solid #0e2c50;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    font-weight: bold;
+    
+}
+
+/* Amélioration visuelle des cellules de données internes */
+.highlight-cell {
+    background-color: #f8fafc;
+    color: #3b82f6;
+}
+
+.prog-cell {
+    background-color: #fafafa;
+    color: #10b981; /* Vert moderne pour la programmation */
+    letter-spacing: 0.05em;
+}
+
+/* Effet interactif au survol des lignes */
+tbody tr:hover {
+    background-color: #f8fafc;
+    transition: background-color 0.2s ease;
+}
+
+/* --- LISTES ET AUTRES ÉLÉMENTS --- */
+ul, ol {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+.pas_de_retrait { list-style-position: inside; } 
+.retrait { list-style-position: outside; } 
+.cercle { list-style-type: circle; } 
+.carre { list-style-type: square; } 
+.rien { list-style-type: none; } 
+.commence_a_zero { list-style-type: decimal-leading-zero; } 
+.lettres_minuscules { list-style-type: lower-alpha; } 
+.chiffres_romains { list-style-type: upper-roman; } 
+.lettres_grecques { list-style-type: lower-greek; }  
+
+/* --- SÉCTIONS DE TEXTE / FORMULAIRE (POUR INFOS PERSONNELLES) --- */
+
+
+fieldset {
+  min-width: 0;
+  padding: 2px 6px;
+  margin:auto;
+  border: double;
+}
+@media (min-width: 768px) {
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; 
+    }
+}
